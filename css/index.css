@@ -2,10 +2,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
 }
 
 body {
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 
 #navbar-sec .header-scrolled {
@@ -13,7 +15,6 @@ body {
     position: fixed;
     z-index: 100;
     width: 100%;
-    background-color: white;
 }
 
 #navbar-sec {
@@ -88,7 +89,7 @@ body {
     color: #2487ce;
 }
 
-main {
+#main-text {
     background-image: url(../images/main-background.jpg);
     background: linear-gradient(to bottom,
             rgba(255, 255, 255, 0.8),
@@ -97,7 +98,7 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 150px;
+    margin-top: 50px;
 }
 
 #main-text h1 {
@@ -118,6 +119,10 @@ main {
 
 #main-text .btn-primary:hover {
     background-color: #3f98d8;
+}
+
+.hero-h1 {
+    margin-top: 100px;
 }
 
 .vid-wrapper {
@@ -213,6 +218,10 @@ main {
     font-size: 30px;
 }
 
+#border-sec {
+    margin-top: 80px;
+}
+
 #border-sec h4 {
     color: #124265;
     transition: ease-in-out 0.3s;
@@ -297,6 +306,19 @@ span {
     font-size: 14px;
 }
 
+.about-vid {
+    overflow: hidden;
+}
+
+.about-pic-wrapper {
+    overflow: hidden;
+}
+
+.about-pic {
+    max-width: 100%;
+    height: auto;
+}
+
 #about-video-sec h3 {
     color: #124265;
     font-size: 24px;
@@ -323,21 +345,14 @@ span {
     cursor: pointer;
 }
 
-.brand-icon {
-    color: #919191;
-    cursor: pointer;
+#brand-sec img:not(:hover) {
+    filter: grayscale(100%);
+    transform: scale(1);
 }
 
-.brand-icon:hover {
-    color: red;
-}
-
-.brand-icon:hover #blog {
-    color: #fff;
-}
-
-.brand-icon:hover #icon {
-    color: #fff;
+#brand-sec img {
+    transition: ease-in-out 0.5s;
+    transform: scale(1.2);
 }
 
 .section-title h2 {
@@ -572,6 +587,10 @@ span {
     color: #2487ce !important;
 }
 
+.portfolio-container {
+    overflow: hidden;
+}
+
 .portfolio-title h2 {
     color: #124265;
     font-family: "Raleway", sans-serif;
@@ -612,16 +631,16 @@ a:link {
 
 .portfolio-item {
     height: auto;
+    overflow: hidden;
 }
 
 .portfolio-wrapper {
     position: relative;
     overflow: hidden;
-    z-index: 1;
 }
 
-.portfolio-wrapper img {
-    width: 300px;
+.portfolio-pic {
+    max-width: 100%;
     height: auto;
 }
 
@@ -952,7 +971,12 @@ a:link {
     font-size: 16px;
     line-height: 24px;
     font-weight: 500;
-    color: #343a40;  
+    color: #343a40;
+    transition: ease-in-out 0.3s;
+}
+
+.accor-container {
+    padding: 0px 200px;
 }
 
 .accordion-wrapper {
@@ -963,6 +987,202 @@ a:link {
     box-shadow: none;
 }
 
-.accordion-button:not(.collapse) {
+.accordion-button:hover .faq-text {
+    color: #2487ce !important;
+}
 
+.accordion-button:focus .faq-text {
+    color: #5aa4da !important;
+}
+
+.accordion-body {
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+}
+
+.contact-title h2 {
+    color: #124265;
+    font-family: "Raleway", sans-serif;
+}
+
+.contact-title p {
+    color: #919191;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+.contact-icon-wrapper {
+    color: #2487ce;
+    background: #e3f0fa;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-address:hover .contact-icon-wrapper {
+    color: #fff;
+    background: #2487ce;
+}
+
+.contact-address h4 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #124265;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 0px;
+}
+
+.contact-address p {
+    font-size: 14px;
+    color: #217bbc;
+    font-family: "Open Sans", sans-serif;
+}
+
+#contact input {
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    height: 44px;
+    transition: ease-in-out 0.3s;
+}
+
+#contact input:focus {
+    outline: 1px solid #2487ce;
+    box-shadow: none;
+}
+
+#contact textarea:focus {
+    outline: 1px solid #2487ce;
+    box-shadow: none;
+}
+
+#contact textarea {
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+}
+
+#contact .btn {
+    background-color: #2487ce;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 30px;
+    transition: ease-in-out 0.4s;
+}
+
+#contact .btn:hover {
+    background-color: #3f95d3;
+}
+
+#footer {
+    box-shadow: 0px 2px 15px rgba(18, 66, 101, 0.08);
+}
+
+.footer-contact h3 {
+    font-size: 26px;
+    font-family: "Raleway", sans-serif;
+    color: #444444;
+    font-weight: 300;
+}
+
+.footer-contact p {
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    color: #777777;
+    margin-bottom: 0px;
+    line-height: 24px;
+}
+
+.footer-contact strong {
+    color: #777777;
+    font-size: 14px;
+    font-family: "Raleway", sans-serif;
+}
+
+.footer-contact span {
+    color: #777777;
+    font-size: 14px;
+    font-family: "Raleway", sans-serif;
+}
+
+.footer-links h4 {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    color: #124265;
+}
+
+.footer-links ul {
+    padding-left: 0px;
+}
+
+.footer-links ul li {
+    list-style-type: none;
+}
+
+.footer-links ul li a {
+    color: #777777;
+    transition: 0.3s;
+    line-height: 1;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+}
+
+.footer-links ul li a:hover {
+    color: #2487ce;
+}
+
+.footer-chev-icon {
+    font-size: 10px;
+    color: #2487ce;
+    padding-right: 2px;
+}
+
+.footer-newsletter h4 {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    color: #124265;
+}
+
+.footer-newsletter p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    color: #124265;
+}
+
+.footer-newsletter input {
+    height: 44px;
+    transition: ease-in-out 0.3s;
+}
+
+.footer-newsletter input:focus {
+    border: 1px solid #2487ce;
+    box-shadow: none;
+}
+
+.footer-newsletter button {
+    border: 1px solid #2487ce;
+    background-color: #2487ce;
+    color: #fff !important;
+    padding: 0 20px 2px 20px;
+    transition: ease-in-out 0.5s;
+}
+
+.footer-newsletter button:hover {
+    background-color: #4793c9;
+}
+
+@media only screen and (max-width: 900px) {
+    .accor-container {
+        padding: 0px 100px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .accor-container {
+        padding: 0px 10px;
+    }
 }

@@ -220,8 +220,8 @@ body {
 }
 
 .icons {
-    color: #2487ce;
-    font-size: 30px;
+    color: #2487ce !important;
+    font-size: 35px !important;
 }
 
 #border-sec {
@@ -489,7 +489,7 @@ span {
     color: #fff;
 }
 
-.bi-file-earmark-text {
+.bx-file {
     position: relative;
     font-size: 36px;
     color: #ffa76e;
@@ -500,11 +500,11 @@ span {
     fill: #ffa76e;
 }
 
-.services-icon-box:hover .bi-file-earmark-text {
+.services-icon-box:hover .bx-file {
     color: #fff;
 }
 
-.bi-speedometer2 {
+.bx-tachometer {
     position: relative;
     font-size: 36px;
     color: #e80368;
@@ -515,11 +515,11 @@ span {
     fill: #e80368;
 }
 
-.services-icon-box:hover .bi-speedometer2 {
+.services-icon-box:hover .bx-tachometer {
     color: #fff;
 }
 
-.bi-stack {
+.bx-layer {
     position: relative;
     font-size: 36px;
     color: #ffbb2c;
@@ -530,11 +530,11 @@ span {
     fill: #ffbb2c;
 }
 
-.services-icon-box:hover .bi-stack {
+.services-icon-box:hover .bx-layer {
     color: #fff;
 }
 
-.fa-tv {
+.bx-slideshow {
     position: relative;
     font-size: 36px;
     color: #ff5828;
@@ -545,11 +545,11 @@ span {
     fill: #ff5828;
 }
 
-.services-icon-box:hover .fa-tv {
+.services-icon-box:hover .bx-slideshow {
     color: #fff;
 }
 
-.fa-archway {
+.bx-arch {
     position: relative;
     font-size: 36px;
     color: #11dbcf;
@@ -560,7 +560,7 @@ span {
     fill: #11dbcf;
 }
 
-.services-icon-box:hover .fa-archway {
+.services-icon-box:hover .bx-arch {
     color: #fff;
 }
 
@@ -1138,6 +1138,7 @@ a:link {
     line-height: 1;
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
+    transition: ease-in-out 0.5s;
 }
 
 .footer-links ul li a:hover {
